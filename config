@@ -1,0 +1,53 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 48,
+    "tooltip": false,
+    "modules-left": [],
+    "modules-center": [
+        "hyprland/workspaces",
+        "mpris",
+        "tray",
+        "wireplumber",
+        "clock"
+    ],
+    "modules-right": [],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "active-only": false,
+        "on-click": "activate",
+        "format": "{name}",
+        "tooltip": false
+    },
+
+    "mpris": {
+        "format": "  {title} - {artist}",
+        "format-paused": "  {title} - {artist}",
+        "max-length": 40,
+        "tooltip": false
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "wireplumber": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  MUTED",
+        "format-icons": ["", "", ""],
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H : %M}",
+        "tooltip": false
+    }
+}

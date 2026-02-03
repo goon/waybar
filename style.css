@@ -1,0 +1,93 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Outfit", "Symbols Nerd Font Mono";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* The container for all modules in the center - This is the main Bar Background */
+.modules-center {
+    background-color: #181818;
+    border: 1px solid #282828;
+    border-radius: 28px;
+    margin: 10px 0; /* Gap at top and bottom */
+    padding: 8px 4px; /* 8px top/bottom padding as requested */
+    min-height: 30px;
+}
+
+/* Individual modules inside the bar styled as pills */
+#workspaces, #mpris, #tray, #wireplumber, #clock {
+    background-color: #282828;
+    border-radius: 28px;
+    margin: 0 4px;
+    padding: 0 16px;
+    transition: all 0.3s ease;
+}
+
+#mpris:hover, #tray:hover, #wireplumber:hover, #clock:hover {
+    color: #f0c674;
+}
+
+#workspaces {
+    padding: 2px 4px;
+}
+
+#workspaces button {
+    padding: 0 12px;
+    color: #d8d8d8;
+    background: transparent;
+    border-radius: 28px;
+    transition: all 0.3s ease;
+    font-family: "Outfit";
+}
+
+#workspaces button.active {
+    background: linear-gradient(45deg, #f0c674, #eab03d);
+    color: #1a1b26;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    color: #ac4142;
+}
+
+#mpris, #tray, #wireplumber, #clock {
+    color: #d8d8d8;
+}
+
+#mpris {
+    font-weight: 500;
+}
+
+#mpris label {
+    margin-top: -2px;
+    padding: 0;
+}
+
+#tray {
+    padding: 0 12px;
+}
+
+#wireplumber {
+    color: #d8d8d8;
+}
+
+#wireplumber label {
+    margin-top: -2px;
+    padding: 0;
+}
+
+#clock {
+    color: #d8d8d8;
+    font-weight: bold;
+}
+
+#clock label {
+    margin-top: -2px;
+    padding: 0;
+}
