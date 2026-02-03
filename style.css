@@ -15,8 +15,8 @@ window#waybar {
     background-color: #181818;
     border: 1px solid #282828;
     border-radius: 28px;
-    margin: 10px 0; /* Gap at top and bottom */
-    padding: 8px 4px; /* 8px top/bottom padding as requested */
+    margin: 10px 0; 
+    padding: 8px 4px; 
     min-height: 30px;
 }
 
